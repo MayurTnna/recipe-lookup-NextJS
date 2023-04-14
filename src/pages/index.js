@@ -13,7 +13,7 @@ const index = () => {
   return (
     <>
       <div className={styles.main_title}>
-        <p className={styles.main_text}>Explore food from around the world</p>
+        <p className={styles.main_text}>Explore food from all around the world!</p>
         <Button onClick={handleClick}>Let's go</Button>
       </div>
     </>

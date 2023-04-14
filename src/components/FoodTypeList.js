@@ -9,10 +9,10 @@ const FoodTypeList = ({ data }) => {
         {data &&
           data.meals.map((item) => (
             <div className="col col-lg-3 col-md-4 col-sm-12 py-3">
-              <Link href={`/type/${item.strArea}`}>
+              <Link className={styles.title} href={`/type/${item.strArea}`}>
                 <Card className={styles.FoodList}>
                   <Card.Body>
-                    <Card.Text key={item.meals} className="text-center">
+                    <Card.Text className ={`text-center ${styles.title}`} key={item.meals} >
                       {item.strArea}
                     </Card.Text>
                   </Card.Body>
