@@ -16,10 +16,15 @@ import {
 } from "@chakra-ui/react";
 
 const FoodCategory = ({ data }) => {
+   
+    
   return (
     <>
       {data &&
         data.meals.map((item) => {
+            const handleClick = () => {
+                window.location.href = item.strYoutube;
+            }
           return (
             <ChakraProvider>
               <Container maxW={"7xl"}>
@@ -78,7 +83,7 @@ const FoodCategory = ({ data }) => {
                         fontWeight={"normal"}
                         px={6}
                         leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
-                        href={item.strYoutube}
+                        onClick={handleClick}
                       >
                         How It Works
                       </Button>
@@ -127,6 +132,7 @@ const FoodCategory = ({ data }) => {
                         w={"100%"}
                         h={"100%"}
                         src={item.strMealThumb}
+                        onClick={handleClick}
                       />
                     </Box>
                   </Flex>
@@ -164,3 +170,4 @@ const Blob = (props) => {
     </Icon>
   );
 };
+

@@ -6,6 +6,7 @@ import {
   Text,
   Stack,
   Image,
+  Button,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
@@ -72,6 +73,20 @@ const FoodDescriptionList = ({ data }) => {
                           >
                             {item.strMeal}
                           </Heading>
+                          <Button
+                            w={"full"}
+                            mt={8}
+                            bg={("#151f21", "gray.900")}
+                            color={"white"}
+                            rounded={"md"}
+                            _hover={{
+                              transform: "translateY(-2px)",
+                              boxShadow: "lg",
+                            }}
+                          >
+                            View more
+                          </Button>
+                          s
                         </Stack>
                       </Box>
                     </Center>
