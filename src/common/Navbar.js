@@ -32,7 +32,7 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             ></Nav>
-            <Form className="d-flex">
+         
               <div className={styles.search_box}>
                 <button className={styles.btn_search}>
                   <FaSearch />
@@ -43,7 +43,7 @@ const Header = () => {
                   placeholder="Type to Search..."
                 />
               </div>
-            </Form>
+       
           </Navbar.Collapse>
         </Container>
       </Navbar>

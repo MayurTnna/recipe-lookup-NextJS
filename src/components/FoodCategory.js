@@ -16,15 +16,13 @@ import {
 } from "@chakra-ui/react";
 
 const FoodCategory = ({ data }) => {
-   
-    
   return (
     <>
       {data &&
         data.meals.map((item) => {
-            const handleClick = () => {
-                window.location.href = item.strYoutube;
-            }
+          const handleClick = () => {
+            window.location.href = item.strYoutube;
+          };
           return (
             <ChakraProvider>
               <Container maxW={"7xl"}>
@@ -170,4 +168,3 @@ const Blob = (props) => {
     </Icon>
   );
 };
-
