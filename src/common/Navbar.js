@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { FaSearch } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 const Header = () => {
@@ -17,7 +18,11 @@ const Header = () => {
     <>
       <Navbar className="navbar-main" bg="dark" variant="dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand className={styles.rainbow_text} onClick={handleClick} href="#">
+          <Navbar.Brand
+            className={styles.rainbow_text}
+            onClick={handleClick}
+            href="#"
+          >
             Foodieee
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -28,13 +33,16 @@ const Header = () => {
               navbarScroll
             ></Nav>
             <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
+              <div className={styles.search_box}>
+                <button className={styles.btn_search}>
+                  <FaSearch />
+                </button>
+                <input
+                  type="text"
+                  className={styles.input_search}
+                  placeholder="Type to Search..."
+                />
+              </div>
             </Form>
           </Navbar.Collapse>
         </Container>

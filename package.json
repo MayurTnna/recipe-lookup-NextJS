@@ -17,10 +17,14 @@
     "eslint-config-next": "13.3.0",
     "framer-motion": "^10.11.6",
     "jquery": "^3.6.4",
+    "lodash.debounce": "^4.0.8",
     "next": "13.3.0",
     "popper.js": "^1.16.1",
     "react": "18.2.0",
+    "react-autosuggest": "^10.1.0",
     "react-bootstrap": "^2.7.3",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-select": "^5.7.2"
   }
 }

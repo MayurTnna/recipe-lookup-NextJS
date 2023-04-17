@@ -86,7 +86,6 @@ const FoodDescriptionList = ({ data }) => {
                           >
                             View more
                           </Button>
-                          s
                         </Stack>
                       </Box>
                     </Center>
@@ -99,5 +98,4 @@ const FoodDescriptionList = ({ data }) => {
     </>
   );
 };
-
 export default FoodDescriptionList;
