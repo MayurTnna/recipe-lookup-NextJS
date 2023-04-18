@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import styles from "../styles/FoodList.module.css";
 import Link from "next/link";
+import { Navbar } from "react-bootstrap";
 
 const FoodTypeList = ({ data }) => {
   return (
@@ -12,7 +13,10 @@ const FoodTypeList = ({ data }) => {
               <Link className={styles.title} href={`/type/${item.strArea}`}>
                 <Card className={styles.FoodList}>
                   <Card.Body>
-                    <Card.Text className ={`text-center ${styles.title}`} key={item.meals} >
+                    <Card.Text
+                      className={`text-center ${styles.title}`}
+                      key={item.meals}
+                    >
                       {item.strArea}
                     </Card.Text>
                   </Card.Body>

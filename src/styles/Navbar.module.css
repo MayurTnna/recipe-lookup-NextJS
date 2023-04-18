@@ -6,6 +6,8 @@
   );
 }
 .rainbow_text {
+  font-size: 2rem;
+
   background: #ca4246;
   background-color: #ca4246;
   background: conic-gradient(
@@ -78,7 +80,6 @@
   animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
   white-space: nowrap;
   border-right: 4px solid orange;
-  box-sizing: border-box;
 }
 @keyframes typing {
   from {
@@ -181,7 +182,7 @@
 .search_box {
   width: fit-content;
   height: fit-content;
-  position: relative;
+  /* position: relative; */
 }
 .input_search {
   height: 50px;
@@ -213,19 +214,19 @@
   cursor: n-resize;
   border-radius: 50%;
   position: absolute;
-  right: 0px;
+  right:-0px;
   color: #ffffff;
   background-color: transparent;
   pointer-events: painted;
 }
-.btn_search:focus ~ .input_search {
+.btn_search:hover ~ .input_search {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
-.input_search:focus {
+.input_search:hover {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;

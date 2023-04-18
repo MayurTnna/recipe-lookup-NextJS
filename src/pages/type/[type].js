@@ -1,9 +1,16 @@
 import FoodDescriptionList from "@/components/FoodDescriptionList";
+import { fetchPosts } from "@/redux/action/action";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 const type = ({ data }) => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchPosts({data}));
+  }, [data]);
   return (
     <>
-      <FoodDescriptionList data={data} />
+      <FoodDescriptionList />
     </>
   );
 };
